@@ -1,54 +1,49 @@
 <!doctype html>
 <html lang="ko">
-<head>
-    <title>HTML</title>
-    <meta charset="utf-8">
-    <style>
-        a {
-            color:black;
-            text-decoration:none;
-        }
-        h1 {
-            font-size:45px;
-            text-align:center;
-        }
-    </style>
-</head>
-<body>
-<h1><a href="0.WEB.html">WEB</a></h1>
-    <ol>
-        <li><h3><a href="1.HTML.html" style="color:blue; text-decoration:underline;">html</a></h3></li>
-        <li><h3><a href="2.CSS.html">css</a></h3></li>
-        <li><h3><a href="3.javascript.html">java script</a></h3></li>
-    </ol>
-    <h2><a href="1.HTML.html">1.HTML</a></h2>
-    <p>웹사이트의 모습을 기술하기 위한 마크업 언어.
-    <br>프로그래밍 언어가 아니라 마크업 정보를 표현하는 마크업 언어로 문서의 내용 이외의 문서의 구조나 서식 같은 것을 포함한다.
-    <br>보면 알겠지만 애초에 이름 HTML의 ML이 마크업 언어라는 뜻이다.
-    <br>웹사이트에서 흔히 볼 수 있는 htm이나 html 확장자가 바로 이 언어로 작성된 문서다.</p>
-    <p>html은 아무리 많은 공백도 1개로 처리한다.
-    <br>예를 들어 스페이스나 탭을 1개를 쓰건 100개를 쓰건 똑같이 1로(하나의 공백으로) 처리한다</p>
-    <p><a href="https://namu.wiki/w/HTML" target="_blank" title="html(나무위키)" lang="en">자세한 설명</a></p>
-    <P><img src="사진\oasis1.jpeg" alt="오아시스 사진"></P>
-    <p>
-    <table border="10">
-        <thead>
-            <tr>
-                <td> </td> <td>1열</td> <td>2열</td> <td>3열</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1행</td> <td>1행 1열</td> <td>1행 2열</td> <td>1행 3열</td>
-            </tr>
-            <tr>
-                <td>2행</td> <td>2행 1열</td> <td>2행 2열</td> <td>2행 3열</td>
-            </tr>
-            <tr>
-                <td>3행</td> <td>3행 1열</td> <td>3행 2열</td> <td>3행 3열</td>
-            </tr>
-        </tbody>
-    </table>
-    </p>
-</body>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <title>HTML</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1><a href="0.WEB.html">WEB</a></h1>
+        <div id="grid">
+            <ol>
+                <li><h3><a href="1.HTML.html">HTML</a></h3></li>
+                <li><h3><a href="2.CSS.html">CSS</a></h3></li>
+                <li><h3><a href="3.javascript.html">JavaScript</a></h3></li>
+            </ol>
+            <div>
+                <h2><a href="1.HTML.html">1.HTML</a></h2>
+                <p>웹사이트의 모습을 기술하기 위한 마크업 언어.
+                <br>프로그래밍 언어가 아니라 마크업 정보를 표현하는 마크업 언어로 문서의 내용 이외의 문서의 구조나 서식 같은 것을 포함한다.
+                <br>보면 알겠지만 애초에 이름 HTML의 ML이 마크업 언어라는 뜻이다.
+                <br>웹사이트에서 흔히 볼 수 있는 htm이나 html 확장자가 바로 이 언어로 작성된 문서다.</p>
+                <p>html은 아무리 많은 공백도 1개로 처리한다.
+                <br>예를 들어 스페이스나 탭을 1개를 쓰건 100개를 쓰건 똑같이 1로(하나의 공백으로) 처리한다</p>
+                <p><a href="https://namu.wiki/w/HTML" target="_blank" title="html(나무위키)" lang="en">자세한 설명</a></p>
+                <P><img src="사진\oasis1.jpeg" alt="오아시스 사진"></P>
+                <p>
+                <table border="10">
+                    <thead>
+                        <tr>
+                            <td> </td> <td>1열</td> <td>2열</td> <td>3열</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1행</td> <td>1행 1열</td> <td>1행 2열</td> <td>1행 3열</td>
+                        </tr>
+                        <tr>
+                            <td>2행</td> <td>2행 1열</td> <td>2행 2열</td> <td>2행 3열</td>
+                        </tr>
+                        <tr>
+                            <td>3행</td> <td>3행 1열</td> <td>3행 2열</td> <td>3행 3열</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </p>
+            </div>
+        </div>
+    </body>
 </html>
