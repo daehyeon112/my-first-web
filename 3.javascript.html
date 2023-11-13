@@ -14,6 +14,34 @@
                 <li><h3><a href="3.javascript.html">JavaScript</a></h3></li>
             </ol>
             <div>
+            <input id="night_day" type="button" value="night" onclick="
+                var target=document.querySelector('body');
+                if (this.value ==='night'){
+                  target.style.backgroundColor='black';
+                  target.style.color='white';
+
+                  this.value ='day';
+                    let alist = document.querySelectorAll('a');
+                    let i = 0;
+                    while( i < alist.length){
+                        console.log(alist[i]);
+                        alist[i].style.color='white';
+                            i = i+1;
+                    }
+                } else{
+                  target.style.backgroundColor='white';
+                  target.style.color='black';
+                  this.value ='night';
+
+                    let alist = document.querySelectorAll('a');
+                    let i = 0;
+                    while( i < alist.length){
+                        console.log(alist[i]);
+                        alist[i].style.color='black';
+                            i = i+1; i+1;
+                    }
+                }
+            ">
             <h2><a href="3.javascript.html">3.java script</a></h2>
             <p>Ecma International의 프로토타입 기반의 프로그래밍 언어로, 스크립트 언어에 해당된다.
             <br>특수한 목적이 아닌 이상 모든 웹 브라우저에 인터프리터가 내장되어 있다. 오늘날 HTML, CSS와 함께 웹을 구성하는 요소 중 하나다.
