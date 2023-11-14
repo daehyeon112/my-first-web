@@ -4,6 +4,38 @@
     <link href="style.css" rel="stylesheet">
     <title>WEB</title>
     <meta charset="utf-8">
+    <script>
+        function setTagAColor(){
+                let alist = document.querySelectorAll('a');
+                let i = 0;
+                while( i < alist.length){
+                    console.log(alist[i]);
+                    alist[i].style.color = color;
+                        i = i+1;
+                };
+            };
+        function setTagBodyColor(){
+            document.querySelector('body').style.color=color;
+
+        };
+        function setTagBodyBackColor(color){
+            document.querySelector('body').style.backgroundColor=color;   
+        }
+        function nightdaybutton(self){
+            var target=document.querySelector('body');
+            if (self.value ==='night'){
+              setTagBodyBackColor('black');
+              setTangBodyColor('white');
+              self.value ='day';
+              setTagAColor('white')
+            } else{
+              setTangBodyBackColor('white')
+              setTangBodyColor('black');
+              self.value ='night';
+              setTagAColor('black')
+            }
+        }
+    </script>
 </head>
 <body>
     <h1><a href="0.WEB.html">WEB</a></h1>
@@ -15,32 +47,7 @@
             </ol>
         <div>
         <input id="night_day" type="button" value="night" onclick="
-            var target=document.querySelector('body');
-            if (this.value ==='night'){
-              target.style.backgroundColor='black';
-              target.style.color='white';
-
-              this.value ='day';
-                let alist = document.querySelectorAll('a');
-                let i = 0;
-                while( i < alist.length){
-                    console.log(alist[i]);
-                    alist[i].style.color='white';
-                        i = i+1;
-                }
-            } else{
-              target.style.backgroundColor='white';
-              target.style.color='black';
-              this.value ='night';
-
-                let alist = document.querySelectorAll('a');
-                let i = 0;
-                while( i < alist.length){
-                    console.log(alist[i]);
-                    alist[i].style.color='black';
-                        i = i+1; i+1;
-                }
-            }
+        nightdaybutton(this);
         ">
     <p>"WEB(웹)"은 World Wide Web의 줄임말로, 인터넷을 통해 접근할 수 있는 전 세계적인 정보 및 문서의 집합을 가리킵니다. 
     <br>웹은 인터넷 상의 다양한 웹 페이지, 문서, 이미지, 비디오, 애플리케이션 등을 포함하며, 웹을 통해 정보를 검색하고 공유할 수 있습니다. 
