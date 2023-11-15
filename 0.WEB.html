@@ -5,7 +5,8 @@
     <title>WEB</title>
     <meta charset="utf-8">
     <script>
-        function setTagAColor(){
+        let Links={
+            setColor:function(color){
                 let alist = document.querySelectorAll('a');
                 let i = 0;
                 while( i < alist.length){
@@ -13,26 +14,28 @@
                     alist[i].style.color = color;
                         i = i+1;
                 };
-            };
-        function setTagBodyColor(){
-            document.querySelector('body').style.color=color;
-
-        };
-        function setTagBodyBackColor(color){
-            document.querySelector('body').style.backgroundColor=color;   
+            }
         }
+            let Body = {
+                setTagBodyColor:function (color){
+                    document.querySelector('body').style.color=color;  
+                },
+                setTagBodyBackColor:function (color){
+                    document.querySelector('body').style.backgroundColor=color;
+                }
+            }
         function nightdaybutton(self){
             var target=document.querySelector('body');
             if (self.value ==='night'){
-              setTagBodyBackColor('black');
-              setTangBodyColor('white');
+              Body.setTagBodyBackColor('black');
+              Body.setTagBodyColor('white');
               self.value ='day';
-              setTagAColor('white')
+              Links.setTagAColor('white')
             } else{
-              setTangBodyBackColor('white')
-              setTangBodyColor('black');
+              Body.setTagBodyBackColor('white')
+              Body.setTagBodyColor('black');
               self.value ='night';
-              setTagAColor('black')
+              Links.setTagAColor('black')
             }
         }
     </script>
