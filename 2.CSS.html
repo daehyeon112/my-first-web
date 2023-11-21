@@ -4,6 +4,7 @@
     <title>CSS</title>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet">
+    <script src="colors.js"></script>
 </head>
 <body>
     <h1><a href="0.WEB.html">WEB</a></h1>
@@ -13,35 +14,10 @@
                 <li><h3><a href="2.CSS.html">CSS</a></h3></li>
                 <li><h3><a href="3.javascript.html">JavaScript</a></h3></li>
             </ol>
-        <div> 
-        <input id="night_day" type="button" value="night" onclick="
-            var target=document.querySelector('body');
-            if (this.value ==='night'){
-              target.style.backgroundColor='black';
-              target.style.color='white';
-
-              this.value ='day';
-                let alist = document.querySelectorAll('a');
-                let i = 0;
-                while( i < alist.length){
-                    console.log(alist[i]);
-                    alist[i].style.color='white';
-                        i = i+1;
-                }
-            } else{
-              target.style.backgroundColor='white';
-              target.style.color='black';
-              this.value ='night';
-
-                let alist = document.querySelectorAll('a');
-                let i = 0;
-                while( i < alist.length){
-                    console.log(alist[i]);
-                    alist[i].style.color='black';
-                        i = i+1; i+1;
-                }
-            }
-        "> 
+        <div>
+            <input id="night_day" type="button" value="night" onclick="
+            nightdaybutton(this);
+            "> 
             <h2><a href="2.CSS.html">2.CSS</h2>
             <p>"CSS"는 Cascading Style Sheet의 약자로 HTML 등의 마크업 언어로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 스타일 시트 언어이다.</p>
             <a href="https://namu.wiki/w/CSS" target="_blank" title="CSS(나무위키)">자세한 설명</a>
